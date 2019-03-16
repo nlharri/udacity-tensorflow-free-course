@@ -83,6 +83,7 @@ source projectname/bin/activate
 ```Bash
 pip install ipykernel
 pip install numpy
+pip install jupyter 
 ipython kernel install --user --name=projectname
 jupyter notebook
 ```
