@@ -79,7 +79,8 @@ virtualenv --system-site-packages -p python3 ./projectname
 source projectname/bin/activate
 ```
 
-### Install ipykernel and numpy in virtual environment
+### Install Jupyter, ipykernel and numpy in virtual environment, and starting Jupyter notebook
+
 ```Bash
 pip install ipykernel
 pip install numpy
