@@ -68,3 +68,21 @@ deactivate
 pip install --upgrade tensorflow
 ```
 
+## Prepare Jupyter notebook in virtual environment
+
+This assumes Jupyter notebook is already installed in the system.
+
+### Create new virtual environment
+
+```Bash
+virtualenv --system-site-packages -p python3 ./projectname
+source projectname/bin/activate
+```
+
+### Install ipykernel and numpy in virtual environment
+```Bash
+pip install ipykernel
+pip install numpy
+ipython kernel install --user --name=projectname
+jupyter notebook
+```
