@@ -130,3 +130,5 @@ jupyter notebook
 * **ReLU**: An activation function that allows a model to solve nonlinear problems
 * **Softmax**: A function that provides probabilities for each possible output class
 * **Classification**: A machine learning model used for distinguishing among two or more output categories
+* **Training Set**: The data used for training the neural network.
+* **Test set**: The data used for testing the final performance of our neural network.
