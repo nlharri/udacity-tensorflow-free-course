@@ -74,12 +74,29 @@ This assumes Jupyter notebook is already installed in the system.
 
 ### Create new virtual environment
 
+#### Option 1: system-wide package usage
+
 ```Bash
 virtualenv --system-site-packages -p python3 ./projectname
 source projectname/bin/activate
 ```
 
+#### Option 2: package usage only in the virtual environment
+
+```Bash
+virtualenv -p python3 ./projectname
+source projectname/bin/activate
+```
+
+### Deactivate virtual environment
+
+```Bash
+deactivate
+```
+
 ### Install Jupyter, ipykernel and numpy in virtual environment, and starting Jupyter notebook
+
+Inside the virtual environment:
 
 ```Bash
 pip install ipykernel
