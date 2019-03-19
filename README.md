@@ -5,7 +5,7 @@ These are the exercises and notes taken during Udacity's free Tensorflow Course.
 
 ## Install scripts
 
-Prerequisites: Python3, pip3, virtualenv are already installed.
+**Prerequisites**: Python3, pip3, virtualenv are already installed.
 
 1. `CreateMachineLearningVirtualEnv.sh`: create virtual environment in folder MachineLearningVirtualEnv
 2. `InstallMachineLearningAppsInVirtualEnv.sh`: installed required pip packages. Must be run in the virtual environment
@@ -23,9 +23,9 @@ deactivate
 jupyter notebook
 ```
 
-## Install Tensorflow
+## Install Tensorflow from scratch
 
-I'm using Ubuntu 18.04
+I was using Ubuntu 18.04.
 
 ### Python3, pip3
 
@@ -35,13 +35,13 @@ sudo apt-get install python3-dev python3-pip
 sudo pip3 install -U virtualenv
 ```
 
-### Create virtual environment in ./venv
+### Create virtual environment in `./venv`
 
 #### The --system-site-packages Option
 
-If you build with virtualenv --system-site-packages ENV, your virtual environment will inherit packages from /usr/lib/python2.7/site-packages (or wherever your global site-packages directory is).
+If you build with `virtualenv --system-site-packages ENV`, **your virtual environment will inherit packages from /usr/lib/python2.7/site-packages (or wherever your global site-packages directory is).**
 
-This can be used if you have control over the global site-packages directory, and you want to depend on the packages there. If you want isolation from the global system, do not use this flag.
+This can be used if you have control over the global site-packages directory, and you want to depend on the packages there. **If you want isolation from the global system, do not use this flag.**
 
 If you need to change this option after creating a virtual environment, you can add (to turn off) or remove (to turn on) the file no-global-site-packages.txt from lib/python3.7/ or equivalent in the environments directory.
 
