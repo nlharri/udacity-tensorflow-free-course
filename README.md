@@ -3,7 +3,28 @@ These are the exercises and notes taken during Udacity's free Tensorflow Course.
 
 # Preparation
 
+## Install scripts
+
+Prerequisites: Python3, pip3, virtualenv are already installed.
+
+1. `CreateMachineLearningVirtualEnv.sh`: create virtual environment in folder MachineLearningVirtualEnv
+2. `InstallMachineLearningAppsInVirtualEnv.sh`: installed required pip packages. Must be run in the virtual environment
+3. `StartMachineLearningVirtualEnv.sh`: start the virtual environment.
+
+### Quit from virtual environment
+
+```Bash
+deactivate
+```
+
+### Start Jupyter
+
+```Bash
+jupyter notebook
+```
+
 ## Install Tensorflow
+
 I'm using Ubuntu 18.04
 
 ### Python3, pip3
@@ -30,8 +51,16 @@ More: https://virtualenv.pypa.io/en/latest/userguide/#the-system-site-packages-o
 
 Create a new virtual environment by choosing a Python interpreter and making a ./venv directory to hold it:
 
+##### With system-wide package usage
+
 ```Bash
 virtualenv --system-site-packages -p python3 ./venv
+```
+
+##### Without system-wide package usage - better option in my opinion
+
+```Bash
+virtualenv -p python3 ./venv
 ```
 
 ### Activate virtual environment
