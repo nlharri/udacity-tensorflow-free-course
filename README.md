@@ -5,11 +5,17 @@ These are the exercises and notes taken during Udacity's free Tensorflow Course.
 
 ## Install scripts
 
-**Prerequisites**: Python3, pip3, virtualenv are already installed.
+**Prerequisites**: Python3, pip3, virtualenv are already installed. Folder used: `MachineLearningVirtualEnv`.
 
 1. `CreateMachineLearningVirtualEnv.sh`: create virtual environment in folder MachineLearningVirtualEnv
 2. `InstallMachineLearningAppsInVirtualEnv.sh`: installed required pip packages. Must be run in the virtual environment
 3. `StartMachineLearningVirtualEnv.sh`: start the virtual environment.
+
+If `StartMachineLearningVirtualEnv.sh` does not start for some reason, use the following to start the virtual environment:
+
+```Bash
+source ./MachineLearningVirtualEnv/bin/activate
+```
 
 ### Quit from virtual environment
 
@@ -123,14 +129,18 @@ source projectname/bin/activate
 deactivate
 ```
 
-### Install Jupyter, ipykernel and numpy in virtual environment, and starting Jupyter notebook
+### Install Tensorflow, Tensorflow-datasets, matplotlib, Jupyter, jupyterthemes, ipykernel and numpy in virtual environment, and starting Jupyter notebook
 
 Inside the virtual environment:
 
 ```Bash
-pip install ipykernel
-pip install numpy
-pip install jupyter 
+pip install --upgrade tensorflow
+pip install --upgrade matplotlib
+pip install --upgrade tensorflow_datasets
+pip install --upgrade ipykernel
+pip install --upgrade numpy
+pip install --upgrade jupyter
+pip install --upgrade jupyterthemes
 ipython kernel install --user --name=projectname
 jupyter notebook
 ```
@@ -158,6 +168,7 @@ jupyter notebook
 * **Flattening**: The process of converting a 2d image into 1d vector
 * **ReLU**: An activation function that allows a model to solve nonlinear problems
 * **Softmax**: A function that provides probabilities for each possible output class
-* **Classification**: A machine learning model used for distinguishing among two or more output categories
+* **Regression problem and model**: A model that outputs a single value. For example, an estimate of a house’s value
+* **Classification problem and model**: A model that outputs a probability distribution across several categories. For example, in Fashion MNIST, the output was 10 probabilities, one for each of the different types of clothing. Remember, we use Softmax as the activation function in our last Dense layer to create this probability distribution
 * **Training Set**: The data used for training the neural network.
 * **Test set**: The data used for testing the final performance of our neural network.
