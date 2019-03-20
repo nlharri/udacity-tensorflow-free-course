@@ -166,7 +166,11 @@ jupyter notebook
 * **Forward pass**: The computation of output values from input
 * **Backward pass (backpropagation)**: The calculation of internal variable adjustments according to the optimizer algorithm, starting from the output layer and working back through each layer to the input.
 * **Flattening**: The process of converting a 2d image into 1d vector
-* **ReLU**: An activation function that allows a model to solve nonlinear problems
+* **ReLU (Rectified Linear Unit)**: An activation function that allows a model to solve nonlinear problems. Typically f(x)=max(0,x)
+  * **Noisy ReLUs**
+  * **Leaky ReLUs**
+  * **Parametric ReLUs**
+  * **ELUs (Exponential Linear Units)**
 * **Softmax**: A function that provides probabilities for each possible output class
 * **Regression problem and model**: A model that outputs a single value. For example, an estimate of a house’s value
 * **Classification problem and model**: A model that outputs a probability distribution across several categories. For example, in Fashion MNIST, the output was 10 probabilities, one for each of the different types of clothing. Remember, we use Softmax as the activation function in our last Dense layer to create this probability distribution
