@@ -149,6 +149,7 @@ jupyter notebook
 
 ## Useful Terms
 
+* **Neural Networks**: A neural network is a network or circuit of neurons, or in a modern sense, an artificial neural network, composed of artificial neurons or nodes.[1] Thus a neural network is either a biological neural network, made up of real biological neurons, or an artificial neural network, for solving artificial intelligence (AI) problems. The connections of the biological neuron are modeled as weights. A positive weight reflects an excitatory connection, while negative values mean inhibitory connections. All inputs are modified by a weight and summed. This activity is referred as a linear combination. Finally, an activation function controls the amplitude of the output. For example, an acceptable range of output is usually between 0 and 1, or it could be −1 and 1. Unlike von Neumann model computations, artificial neural networks do not separate memory and processing and operate via the flow of signals through the net connections, somewhat akin to biological networks. These artificial networks may be used for predictive modeling, adaptive control and applications where they can be trained via a dataset. Self-learning resulting from experience can occur within networks, which can derive conclusions from a complex and seemingly unrelated set of information.
 * **Feature**: The input(s) to our model
 * **Examples**: An input/output pair used for training
 * **Labels**: The output of the model
@@ -176,3 +177,5 @@ jupyter notebook
 * **Classification problem and model**: A model that outputs a probability distribution across several categories. For example, in Fashion MNIST, the output was 10 probabilities, one for each of the different types of clothing. Remember, we use Softmax as the activation function in our last Dense layer to create this probability distribution
 * **Training Set**: The data used for training the neural network.
 * **Test set**: The data used for testing the final performance of our neural network.
+* **Convolutional Neural Networks**: TODO
+* **Max Pooling**: TODO
