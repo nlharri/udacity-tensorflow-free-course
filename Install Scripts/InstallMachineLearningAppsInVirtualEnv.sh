@@ -8,3 +8,4 @@ pip install --upgrade jupyter
 pip install --upgrade matplotlib
 pip install --upgrade tensorflow_datasets
 pip install --upgrade plaidml-keras
+pip install --upgrade plaidbench
